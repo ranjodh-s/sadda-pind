@@ -53,7 +53,7 @@ export default function Gallery() {
             A Glimpse of Sadda Pind
           </p>
 
-          <h2 className="max-w-3xl text-4xl font-light leading-tight tracking-tight text-black md:text-6xl">
+          <h2 className="w-full text-4xl uppercase leading-tight tracking-tight text-black md:text-6xl">
             Memories That Stay With You
           </h2>
 
@@ -114,7 +114,7 @@ export default function Gallery() {
       {/* Lightbox */}
       {selectedImage && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-5"
+          className="fixed inset-0 z-60 flex items-center justify-center bg-black/90 p-5"
           onClick={() => setSelectedImage(null)}
         >
           <button

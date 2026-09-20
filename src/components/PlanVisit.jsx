@@ -87,7 +87,7 @@ export default function PlanVisit() {
             Plan Your Visit
           </p>
 
-          <h2 className="mt-5 max-w-xl text-5xl font-light leading-[1.05] tracking-tight md:text-7xl">
+          <h2 className="mt-5 max-w-xl uppercase text-5xl leading-[1.05] tracking-tight md:text-7xl">
             Your Punjabi
             <br />
             Experience Awaits

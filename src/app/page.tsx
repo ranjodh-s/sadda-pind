@@ -3,6 +3,7 @@ import HeroCarousel from "../components/HeroCarousel";
 import Gallery from "../components/Gallery";
 import PlanVisit from "../components/PlanVisit";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   const experiences = [
@@ -40,8 +41,9 @@ export default function Home() {
 
   return (
     <>
+      <Navbar />
       {/* Hero Section */}
-      <main className=" z-10 min-h-screen">
+      <main id="home" className=" z-10 min-h-screen">
         <div className="flex min-h-screen flex-col items-center justify-center p-6 text-center md:p-24">
           <h1 className="text-5xl leading-tight md:text-7xl">
             EXPERIENCE THE <br />
@@ -66,9 +68,9 @@ export default function Home() {
       </main>
 
       {/* Experience Section */}
-      <section className="z-20 flex min-h-screen flex-col items-center bg-black px-6 py-16 md:px-24">
+      <section id="experience" className="z-20 flex min-h-screen flex-col items-center bg-black px-6 py-16 md:px-24">
         <h2 className="text-center text-4xl text-white md:text-5xl">
-          Experience Sadda Pind
+          EXPERIENCE SADDA PIND
         </h2>
 
         <p className="mt-4 text-center text-lg text-white/70">
@@ -111,7 +113,7 @@ export default function Home() {
       >
         <div className="flex flex-col items-center justify-center">
           <h2 className="text-4xl text-white md:text-7xl lg:text-7xl">
-            Taste of Punjab
+            TASTE OF PUNJAB
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg text-white md:text-xl">
@@ -141,7 +143,7 @@ export default function Home() {
 >
   <div className="flex w-full max-w-4xl flex-col items-start justify-center text-left">
     {/* Heading */}
-    <h2 className="text-4xl font-light leading-tight tracking-wide text-white sm:text-5xl md:text-6xl">
+    <h2 className="text-4xl leading-tight tracking-wide text-white sm:text-5xl md:text-6xl">
       STAY A LITTLE
       <br className="sm:hidden" /> LONGER
     </h2>
