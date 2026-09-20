@@ -46,7 +46,7 @@ export default function Gallery() {
 
   return (
     <>
-      <section id="photo-gallery" className="bg-[#f5f5f3] px-5 py-20 md:px-12 lg:px-24 z-60 min-h-screen">
+      <section id="photo-gallery" className="bg-[#f5f5f3] px-5 py-20 md:px-12 lg:px-24 min-h-screen">
         {/* Section Heading */}
         <div className="mx-auto mb-12 max-w-7xl">
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-black/60">
@@ -76,6 +76,7 @@ export default function Gallery() {
                 src={image.src}
                 alt={image.alt}
                 fill
+                priority
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 className="object-cover transition duration-700 ease-out group-hover:scale-105"
               />
@@ -109,35 +110,42 @@ export default function Gallery() {
         </p>
         </button>
         {/* <div className="absolute inset-0 backdrop-blur-md pointer-events-none [mask-image:linear-gradient(to_bottom,transparent_30%,black_100%)] [-webkit-mask-image:linear-gradient(to_bottom,transparent_30%,black_100%)]"></div> */}
-      </section>
+      </section> 
 
       {/* Lightbox */}
       {selectedImage && (
         <div
-          className="fixed inset-0 z-60 flex items-center justify-center bg-black/90 p-5"
+          className="fixed inset-0 z-30 flex items-center justify-center bg-black/90 p-5"
           onClick={() => setSelectedImage(null)}
         >
-          <button
-            type="button"
-            onClick={() => setSelectedImage(null)}
-            className="absolute right-5 top-5 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-2xl text-black"
-            aria-label="Close image"
-          >
-            &times;
-          </button>
+          
 
-          <div
-            className="relative h-[75vh] w-full max-w-6xl"
-            onClick={(event) => event.stopPropagation()}
-          >
-            <Image
-              src={selectedImage.src}
-              alt={selectedImage.alt}
-              fill
-              sizes="100vw"
-              className="object-contain"
-            />
-          </div>
+         <div
+  className="fixed inset-0 z-[200] flex items-center justify-center bg-black/90 px-4 pt-24 pb-6 sm:px-8 sm:pt-28"
+  onClick={() => setSelectedImage(null)}
+>
+  <div
+    className="relative h-[calc(100vh-8rem)] w-full max-w-6xl"
+    onClick={(event) => event.stopPropagation()}
+  >
+    <Image
+      src={selectedImage.src}
+      alt={selectedImage.alt}
+      fill
+      sizes="100vw"
+      className="object-contain"
+    />
+
+    <button
+      type="button"
+      onClick={() => setSelectedImage(null)}
+      className="absolute right-0 top-0 flex h-10 w-10 translate-y-[-12px] translate-x-[-4px] items-center justify-center rounded-full bg-white text-3xl font-light leading-none text-black transition duration-300 hover:bg-[#d6b27a] sm:right-2 sm:top-2 sm:translate-y-0 sm:translate-x-0"
+      aria-label="Close image"
+    >
+      &times;
+    </button>
+  </div>
+</div>
         </div>
       )}
     </>

@@ -16,7 +16,7 @@ const visitLinks = [
 
 export default function Footer() {
   return (
-    <footer className="z-70 bg-[#171512] text-white">
+    <footer className="bg-[#171512] text-white">
       {/* Main Footer */}
       <div className="mx-auto max-w-7xl px-6 py-20 md:px-12 lg:px-24">
         <div className="grid gap-14 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">

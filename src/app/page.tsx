@@ -43,7 +43,7 @@ export default function Home() {
     <>
       <Navbar />
       {/* Hero Section */}
-      <main id="home" className=" z-10 min-h-screen">
+      <main id="home" className="min-h-screen">
         <div className="flex min-h-screen flex-col items-center justify-center p-6 text-center md:p-24">
           <h1 className="text-5xl leading-tight md:text-7xl">
             EXPERIENCE THE <br />
@@ -68,7 +68,7 @@ export default function Home() {
       </main>
 
       {/* Experience Section */}
-      <section id="experience" className="z-20 flex min-h-screen flex-col items-center bg-black px-6 py-16 md:px-24">
+      <section id="experience" className="flex min-h-screen flex-col items-center bg-black px-6 py-16 md:px-24">
         <h2 className="text-center text-4xl text-white md:text-5xl">
           EXPERIENCE SADDA PIND
         </h2>
@@ -87,6 +87,7 @@ export default function Home() {
                 src={experience.image}
                 alt={experience.alt}
                 fill
+                priority
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover transition duration-500 group-hover:scale-110"
               />
@@ -109,7 +110,7 @@ export default function Home() {
       {/* Food Section */}
       <section
         id="food"
-        className="relative food z-30 flex min-h-screen flex-col items-center justify-center px-6 py-16 text-center md:px-24"
+        className="relative food flex min-h-screen flex-col items-center justify-center px-6 py-16 text-center md:px-24"
       >
         <div className="flex flex-col items-center justify-center">
           <h2 className="text-4xl text-white md:text-7xl lg:text-7xl">
@@ -133,13 +134,13 @@ export default function Home() {
       </section>
 
       {/* Cultural Performance Section */}
-      <section id="performance" className="z-40 min-h-screen">
+      <section id="performance" className="min-h-screen">
         <HeroCarousel />
       </section>
 
       <section
   id="homestay"
-  className="relative z-50 flex min-h-screen w-full items-center justify-center bg-black px-5 py-20 sm:px-8 md:px-12 lg:px-20"
+  className="relative flex min-h-screen w-full items-center justify-center bg-black px-5 py-20 sm:px-8 md:px-12 lg:px-20"
 >
   <div className="flex w-full max-w-4xl flex-col items-start justify-center text-left">
     {/* Heading */}

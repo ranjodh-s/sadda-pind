@@ -28,7 +28,7 @@ const FrontText = () => {
 
 const HeroCarousel = () => {
   return (
-    <div className="relative w-full h-screen z-30">
+    <div className="relative w-full h-screen">
 
       <Swiper
         modules={[

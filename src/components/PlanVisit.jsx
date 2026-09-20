@@ -74,7 +74,7 @@ export default function PlanVisit() {
   return (
     <section
       id="plan-visit"
-      className="relative z-70 overflow-hidden bg-[#eee8dc] px-6 py-24 text-[#211c17] md:px-12 lg:px-24"
+      className="relative overflow-hidden bg-[#eee8dc] px-6 py-24 text-[#211c17] md:px-12 lg:px-24"
     >
       {/* Decorative Background */}
       <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full border border-[#8d6b43]/20" />
@@ -138,6 +138,7 @@ export default function PlanVisit() {
             src="/images/punjabi-heritage.jpg"
             alt="Traditional Punjabi village entrance"
             fill
+            priority
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover transition duration-700 hover:scale-105"
           />
