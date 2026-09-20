@@ -1,26 +1,17 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+main{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/background.jpeg');
+  background-size: cover;
+  color: white;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.food{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/punjabi-thali.jpg');
+  background-size: cover;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+#homestay{
+  background-image: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('/images/home-stays.jpg');
+  background-size: cover;
 }
