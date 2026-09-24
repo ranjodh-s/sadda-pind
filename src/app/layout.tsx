@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sadda Pind | Experience the Soul of Punjab",
-  template: "%s | Sadda Pind",
+  title:{
+    default: "Sadda Pind | Experience the Soul of Punjab",
+    template: "%s | Sadda Pind"},
   description: "Experience authentic Punjabi culture, traditional food, village life, cultural performances, and Punjabi hospitality at Sadda Pind in Amritsar.",
   keywords: [
     "Sadda Pind",
