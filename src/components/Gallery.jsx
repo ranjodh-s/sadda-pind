@@ -6,37 +6,37 @@ import { useState } from "react";
 const galleryImages = [
   {
     src: "/images/village-lifestyle.jpg",
-    alt: "Sadda Pind village view",
+    alt: "Sadda Pind village view in Amritsar",
     className: "md:col-span-2 md:row-span-2",
   },
   {
     src: "/images/fun-games.jpg",
-    alt: "Punjabi village architecture",
+    alt: "Punjabi village architecture at Sadda Pind in Amritsar",
     className: "md:col-span-1 md:row-span-2",
   },
   {
     src: "/images/punjabi-heritage.jpg",
-    alt: "Traditional Punjabi lifestyle",
+    alt: "Punjabi heritage and culture at Sadda Pind in Amritsar",
     className: "md:col-span-1 md:row-span-1",
   },
   {
     src: "/images/punjabi-thali.jpg",
-    alt: "Punjabi cultural experience",
+    alt: "Punjabi cultural experience at Sadda Pind in Amritsar",
     className: "md:col-span-1 md:row-span-1",
   },
   {
     src: "/images/home-stays.jpg",
-    alt: "Sadda Pind heritage experience",
+    alt: "Sadda Pind heritage experience in Amritsar",
     className: "md:col-span-1 md:row-span-2",
   },
   {
     src: "/images/cultural-activities.jpg",
-    alt: "Sadda Pind heritage experience",
+    alt: "Sadda Pind heritage experience in Amritsar",
     className: "md:col-span-2 md:row-span-2",
   },
   {
     src: "/images/c-one.jpg",
-    alt: "Sadda Pind heritage experience",
+    alt: "Sadda Pind heritage experience in Amritsar",
     className: "md:col-span-1 md:row-span-2",
   },
 ];

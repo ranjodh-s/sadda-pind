@@ -10,32 +10,32 @@ export default function Home() {
     {
       image: "/images/village-lifestyle.jpg",
       title: "Village Lifestyle",
-      alt: "Traditional Punjabi village lifestyle",
+      alt: "Traditional Punjabi village lifestyle at Sadda Pind in Amritsar",
     },
     {
       image: "/images/cultural-activities.jpg",
       title: "Cultural Activities",
-      alt: "Punjabi cultural activities",
+      alt: "Traditional Punjabi cultural activities at Sadda Pind in Amritsar",
     },
     {
       image: "/images/fun-games.jpg",
       title: "Fun Games",
-      alt: "Traditional Punjabi fun games",
+      alt: "Traditional Punjabi fun games at Sadda Pind in Amritsar",
     },
     {
       image: "/images/punjabi-heritage.jpg",
       title: "Punjabi Heritage",
-      alt: "Punjabi heritage",
+      alt: "Punjabi heritage and culture at Sadda Pind in Amritsar",
     },
     {
       image: "/images/antiques.jpg",
       title: "Antiques",
-      alt: "Traditional Punjabi antiques",
+      alt: "Traditional Punjabi antiques at Sadda Pind in Amritsar",
     },
     {
       image: "/images/home-stays.jpg",
       title: "Homestays",
-      alt: "Traditional Punjabi homestay",
+      alt: "Traditional village-inspired accommodation at Sadda Pind in Amritsar",
     },
   ];
 
@@ -47,13 +47,13 @@ export default function Home() {
         <div className="flex min-h-screen flex-col items-center justify-center p-6 text-center md:p-24">
           <h1 className="text-5xl leading-tight md:text-7xl">
             EXPERIENCE THE <br />
-            SOUL OF PUNJAB
+            SOUL OF PUNJAB <span className=""> AT SADDA PIND</span>
           </h1>
 
-          <p className="mt-4 text-xl md:text-2xl">
-            A Living Punjabi <br />
-            Village in Amritsar
-          </p>
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-white/80 sm:text-base md:text-lg">
+  Discover authentic Punjabi culture, traditional food, village life,
+  and unforgettable experiences in Amritsar.
+</p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <button className="rounded-3xl border border-white bg-white px-6 py-3 text-black transition hover:bg-transparent hover:text-white">

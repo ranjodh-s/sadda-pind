@@ -53,7 +53,7 @@ const HeroCarousel = () => {
 
             <Image
               src="/images/c-one.jpg"
-              alt="Bhangra Performance"
+              alt="Bhangra Performance at Sadda Pind in Amritsar"
               fill
               priority
               className="object-cover"
@@ -74,7 +74,7 @@ const HeroCarousel = () => {
 
             <Image
               src="/images/c-two.jpg"
-              alt="Bhangra Performance"
+              alt="Bhangra Performance at Sadda Pind in Amritsar"
               fill
               priority
               className="object-cover"
@@ -90,7 +90,7 @@ const HeroCarousel = () => {
 
             <Image
               src="/images/c-three.jpg"
-              alt="Bhangra Performance"
+              alt="Bhangra Performance at Sadda Pind in Amritsar"
               fill
               priority
               className="object-cover"
