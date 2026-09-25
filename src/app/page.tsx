@@ -4,6 +4,7 @@ import Gallery from "../components/Gallery";
 import PlanVisit from "../components/PlanVisit";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   const experiences = [
@@ -20,7 +21,7 @@ export default function Home() {
     {
       image: "/images/fun-games.jpg",
       title: "Fun Games",
-      alt: "Traditional Punjabi fun games at Sadda Pind in Amritsar",
+      alt: "Traditional Punjabi village games at Sadda Pind in Amritsar",
     },
     {
       image: "/images/punjabi-heritage.jpg",
@@ -56,13 +57,19 @@ export default function Home() {
 </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <button className="rounded-3xl border border-white bg-white px-6 py-3 text-black transition hover:bg-transparent hover:text-white">
-              Book Your Visit
-            </button>
+            <Link
+  href="#plan-visit"
+  className="rounded-3xl border border-white bg-white px-6 py-3 text-black transition hover:bg-transparent hover:text-white"
+>
+  Book Your Visit
+</Link>
 
-            <button className="rounded-3xl border border-white px-6 py-3 text-white transition hover:bg-white hover:text-black">
-              Explore Sadda Pind
-            </button>
+            <Link
+  href="#experience"
+  className="rounded-3xl border border-white px-6 py-3 text-white transition hover:bg-white hover:text-black"
+>
+  Explore Sadda Pind
+</Link>
           </div>
         </div>
       </main>
@@ -74,7 +81,9 @@ export default function Home() {
         </h2>
 
         <p className="mt-4 text-center text-lg text-white/70">
-          Where Punjab's traditions come alive.
+          Discover Punjabi village life, cultural activities, traditional
+  heritage, games, antiques, and authentic experiences.
+
         </p>
 
         <div className="mt-10 grid w-full max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -87,7 +96,6 @@ export default function Home() {
                 src={experience.image}
                 alt={experience.alt}
                 fill
-                priority
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover transition duration-500 group-hover:scale-110"
               />
@@ -117,11 +125,10 @@ export default function Home() {
             TASTE OF PUNJAB
           </h2>
 
-          <p className="mt-6 max-w-3xl text-lg text-white md:text-xl">
-            From hearty Punjabi classics to traditional village-style dining,
-            <br className="hidden md:block" />
-            experience the flavours that are at the heart of Punjab.
-          </p>
+          <p className="mt-4 text-center text-lg text-white/70">
+  From hearty Punjabi classics to traditional village-style dining,
+  experience the flavours that are at the heart of Punjab.
+</p>
 
           <button className="mt-8 rounded-3xl border border-white bg-white px-6 py-3 text-black transition hover:bg-transparent hover:text-white">
             Explore Our Menu
@@ -161,11 +168,11 @@ export default function Home() {
     </p>
 
     {/* Highlights */}
-    <div className="mt-8 flex flex-col items-start gap-3 text-xs tracking-wide text-white/90 sm:text-sm md:text-base">
-      <p>TRADITIONAL HAVELI ROOMS</p>
-      <p>AUTHENTIC PUNJABI HOSPITALITY</p>
-      <p>PEACEFUL VILLAGE ATMOSPHERE</p>
-    </div>
+    <ul className="mt-8 flex flex-col items-start gap-3 text-xs tracking-wide text-white/90 sm:text-sm md:text-base">
+  <li>Traditional Haveli Rooms</li>
+  <li>Authentic Punjabi Hospitality</li>
+  <li>Peaceful Village Atmosphere</li>
+</ul>
 
     {/* CTA */}
     <button
